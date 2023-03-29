@@ -9,13 +9,17 @@ html {
 
 body{
     background-color:rgb(225,235,245);
+    display: grid;
+    place-items:center;
+    min-height: 100vh;
+
 }
 
-.container{
+main{
     background-color: hsl(0, 0%, 100%);
     height:60vh;
     width:38vh;
-    margin:25vh auto;
+    /* margin: auto; */
     /* display: flex; */
     /* flex-direction: column; */
     /* justify-content: center; */
@@ -24,6 +28,15 @@ body{
     box-shadow: 1px 1px 15px 5px hsl(212, 45%, 89%);
     /* border: 1px solid purple; */
 
+}
+
+.sr-only{
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    /*hides any content that 
+    spills outside the 1-pixel rectangle defined by the clip and clip-path properties*/
+    overflow:hidden;
+    width:1px;
+    height:1px;
 }
 
 .qr-code {
